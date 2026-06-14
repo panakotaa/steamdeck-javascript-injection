@@ -27,15 +27,15 @@ The Steam Deck UI is a Chromium Embedded Framework (CEF) application. The Gaming
 Copy the repo to the Deck via `scp`, then run over SSH. Replace `DECK_IP` with your Deck's local IP address (visible in **Settings → Internet**).
 
 ```bash
-scp -r steam-dom-inject/ deck@DECK_IP:~/steam-dom-inject
+scp -r steamdeck-javascript-injection/ deck@DECK_IP:~/steamdeck-javascript-injection
 ```
 
 ```bash
 # Inject
-ssh deck@DECK_IP "python3 ~/steam-dom-inject/tools/inject_mvp.py"
+ssh deck@DECK_IP "python3 ~/steamdeck-javascript-injection/tools/inject_mvp.py"
 
 # Remove
-ssh deck@DECK_IP "python3 ~/steam-dom-inject/tools/inject_mvp.py --remove"
+ssh deck@DECK_IP "python3 ~/steamdeck-javascript-injection/tools/inject_mvp.py --remove"
 ```
 ---
 
